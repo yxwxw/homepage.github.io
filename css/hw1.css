@@ -1,0 +1,13 @@
+body {
+    /* background-color: #f0f8ea; */
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.header {
+    height: 56px;
+    background: #e54b4b;
+    line-height: 56px;
+}
