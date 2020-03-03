@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>COVID-19 Visualization</title>
+    <meta charset="utf-8" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.9.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.4.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.2.2"></script>
+
+    <script src="./lib/g2.min.js"></script>
+    <script src="https://unpkg.com/@antv/data-set"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+        #content {
+            width: 50%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        #logo {
+            color: #070707;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-left: 25%;
+        }
+
+        .header {
+            text-shadow: azure;
+            height: 54px;
+        }
+
+        @media (max-width: 700px) {
+            #logo {
+                margin-left: 10%;
+            }
+
+            #content {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="logo">COVID-19 Visualization</h1>
+    </header>
+    <!-- Container for the visualization -->
+    <div id="content">
+        <table id="overallTable" style="text-align: center; width: 80%; margin: 0 auto" class="table">
+            <small id="last_update" class="text-muted">Last Updated at: 2020-03-03</small>
+            <thead>
+                <tr>
+                    <th><small><span id="confirmedIncr" class="text-muted">较昨日<span
+                                    class="text-danger">+129</span></span></small><br><big id="confirmedCount"
+                            class="text-danger">80303</big>
+                        <p>累计确诊</p>
+                    </th>
+                    <th><small><span id="suspectedIncr" class="text-muted">较昨日<span
+                                    class="text-warning">+129</span></span></small><br><big id="suspectedCount"
+                            class="text-warning">587</big>
+                        <p>现存疑似</p>
+                    </th>
+                    <th><small><span id="seriousIncr" class="text-muted">较昨日<span
+                                    class="text-info">-304</span></span></small><br><big id="seriousCount"
+                            class="text-info">6806</big>
+                        <p>现存重症</p>
+                    </th>
+                    <th><small><span id="deadIncr" class="text-muted">较昨日<span
+                                    class="text-primary">+33</span></span></small><br><big id="deadCount"
+                            class="text-primary">2948</big>
+                        <p>死亡</p>
+                    </th>
+                    <th><small><span id="curedIncr" class="text-muted">较昨日<span
+                                    class="text-success">+2905</span></span></small><br><big id="curedCount"
+                            class="text-success">47423</big>
+                        <p>治愈</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <div id="container"></div>
+        <script>
+            fetch('https://yxwxw.github.io/data/data.json')
+                .then(res => res.json())
+                .then(data => {
+                    const chart = new G2.Chart({
+                        container: 'container',
+                        autoFit: true,
+                        height: 500,
+                    });
+                    chart.data(data);
+
+                    chart.tooltip({
+                        showCrosshairs: true,
+                        shared: true,
+                    });
+
+                    chart.axis('number', {
+                        label: {
+                            formatter: (val) => {
+                                return val + ' person';
+                            },
+                        },
+                    });
+                    const color = ['#CB2920', '#75DAAD', '#142850', '#EC7743', '#BAF1A1', '#42240C']
+                    chart.scale({
+                        date: {
+                            tickCount: 10,
+                        },
+                        number: {
+                            nice: true,
+                        }
+                    });
+
+                    chart.line().position('date*number').color('type', color).shape('smooth');
+                    chart.point().position('date*number').color('type', color).shape('circle');
+                    chart.point().position('date*number').color('type', color).shape('circle');
+
+                    chart.render();
+                });
+        </script>
+        <div id="vis", style="margin: 0 auto;"></div>
+        <script>
+            var vlSpec = {
+                "$schema": 'https://vega.github.io/schema/vega-lite/v4.json',
+                "width": "900",
+                "height": "500",
+                "data": {
+                    "values": [
+                        { "age": "0-10岁", "sex": "男", "rate": 0.028748341441839895 },
+                        { "age": "10-20岁", "sex": "男", "rate": 0.03582485625829279 },
+                        { "age": "10-20岁", "sex": "男", "rate": 0.03582485625829279 },
+                        { "age": "20-30岁", "sex": "男", "rate": 0.1468376824413976 },
+                        { "age": "30-40岁", "sex": "男", "rate": 0.23706324635117204 },
+                        { "age": "40-50岁", "sex": "男", "rate": 0.2410437859354268 },
+                        { "age": "50-60岁", "sex": "男", "rate": 0.16585581601061478 },
+                        { "age": "60-70岁", "sex": "男", "rate": 0.094648385670057 },
+                        { "age": "70-80岁", "sex": "男", "rate": 0.04157452454666077 },
+                        { "age": "80-90岁", "sex": "男", "rate": 0.007518796992481203 },
+                        { "age": "90-100岁", "sex": "男", "rate": 0.0008845643520566122 },
+
+                        { "age": "0-10岁", "sex": "女", "rate": 0.02308078273958856 },
+                        { "age": "10-20岁", "sex": "女", "rate": 0.02609131961866533 },
+                        { "age": "10-20岁", "sex": "女", "rate": 0.02609131961866533 },
+                        { "age": "20-30岁", "sex": "女", "rate": 0.11339688911189162 },
+                        { "age": "30-40岁", "sex": "女", "rate": 0.21274460612142498 },
+                        { "age": "40-50岁", "sex": "女", "rate": 0.2488710486703462 },
+                        { "age": "50-60岁", "sex": "女", "rate": 0.1996989463120923 },
+                        { "age": "60-70岁", "sex": "女", "rate": 0.11991971901655796 },
+                        { "age": "70-80岁", "sex": "女", "rate": 0.040642247867536375 },
+                        { "age": "80-90岁", "sex": "女", "rate": 0.015052684395383844 },
+                        { "age": "90-100岁", "sex": "女", "rate": 0.0005017561465127947 }
+                    ]
+                },
+                "layer": [
+                    {
+                        "mark": "bar",
+                        "encoding": {
+                            "y": {
+                                "aggregate": "sum",
+                                "field": "rate",
+                                "type": "quantitative",
+                                "stack": "zero"
+                            },
+                            "x": {
+                                "field": "age",
+                                "type": "nominal"
+                            },
+                            "color": {
+                                "field": "sex",
+                                "type": "nominal"
+                            }
+                        }
+                    },
+                    {
+                        "mark": {
+                            "type": "text",
+                            "dy": -10
+                        },
+                        "encoding": {
+                            "y": {
+                                "aggregate": "sum",
+                                "field": "rate",
+                                "type": "quantitative",
+                                "stack": "zero"
+                            },
+                            "x": {
+                                "field": "age",
+                                "type": "nominal"
+                            },
+                            "text": {
+                                "field": "rate",
+                                "type": "quantitative",
+                                "format": ".5f"
+                            }
+                        }
+                    }
+                ]
+            }
+            vegaEmbed('#vis', vlSpec);
+        </script>
+
+        <div id='pies'>
+
+            <div id="pie1" style="width: 45%; float: left;"></div>
+            <script>
+                function pie1() {
+
+                    const data = [
+                        { item: '治愈', count: 48551, percent: 0.5546 },
+                        { item: '现存确诊', count: 36029, percent: 0.4115 },
+                        { item: '死亡', count: 2965, percent: 0.0339 }
+                    ];
+
+                    const chart = new G2.Chart({
+                        container: 'pie1',
+                        autoFit: true,
+                        height: 350,
+                    });
+
+                    chart.coordinate('theta', {
+                        radius: 0.75,
+                    });
+
+                    chart.data(data);
+
+                    chart.scale('percent', {
+                        formatter: (val) => {
+                            val = val * 100 + '%';
+                            return val;
+                        },
+                    });
+
+                    chart.tooltip({
+                        showTitle: false,
+                        showMarkers: false,
+                    });
+
+                    chart
+                        .interval()
+                        .position('percent')
+                        .color('item', ['#49792e', '#d45b36', '#84142d'])
+                        .label('percent', {
+                            content: (data) => {
+                                return `${data.item}: ${data.percent * 100}%`;
+                            },
+                        })
+                        .adjust('stack');
+
+                    chart.interaction('element-active');
+
+                    chart.render();
+                }
+                pie1();
+            </script>
+            <div id="pie2" style="width: 45%; float: right;"></div>
+            <script>
+                function pie2() {
+                    const data = [
+                        { item: '男', count: 2389, percent: 0.5314 },
+                        { item: '女', count: 2107, percent: 0.4686 },
+                    ];
+
+                    const chart = new G2.Chart({
+                        container: 'pie2',
+                        autoFit: true,
+                        height: 350,
+                    });
+
+                    chart.coordinate('theta', {
+                        radius: 0.75,
+                    });
+
+                    chart.data(data);
+
+                    chart.scale('percent', {
+                        formatter: (val) => {
+                            val = val * 100 + '%';
+                            return val;
+                        },
+                    });
+
+                    chart.tooltip({
+                        showTitle: false,
+                        showMarkers: false,
+                    });
+
+                    chart
+                        .interval()
+                        .position('percent')
+                        .color('item', ['#49792e', '#d45b36'])
+                        .label('percent', {
+                            content: (data) => {
+                                return `${data.item}: ${data.percent * 100}%`;
+                            },
+                        })
+                        .adjust('stack');
+
+                    chart.interaction('element-active');
+
+                    chart.render();
+                }
+                pie2();
+            </script>
+
+        </div>
+    </div>
+</body>
+
+</html>
