@@ -1,362 +1,1002 @@
 [
   {
-    "date": "01-24",
-    "overall_comfirm": 910,
-    "overall_cured": 37,
-    "overall_death": 26,
-    "without_comfirm": 805,
-    "without_cured": 34,
-    "without_death": 19
+      "date": "01-24",
+      "type": "overall_comfirm",
+      "number": 910
   },
   {
-    "date": "01-25",
-    "overall_comfirm": 539,
-    "overall_cured": 4,
-    "overall_death": 16,
-    "without_comfirm": 358,
-    "without_cured": 3,
-    "without_death": 1
+      "date": "01-24",
+      "type": "overall_cured",
+      "number": 37
   },
   {
-    "date": "01-26",
-    "overall_comfirm": 718,
-    "overall_cured": 10,
-    "overall_death": 14,
-    "without_comfirm": 390,
-    "without_cured": 0,
-    "without_death": 1
+      "date": "01-24",
+      "type": "overall_death",
+      "number": 26
   },
   {
-    "date": "01-27",
-    "overall_comfirm": 889,
-    "overall_cured": 12,
-    "overall_death": 25,
-    "without_comfirm": 524,
-    "without_cured": 7,
-    "without_death": 1
+      "date": "01-24",
+      "type": "without_comfirm",
+      "number": 805
   },
   {
-    "date": "01-28",
-    "overall_comfirm": 1811,
-    "overall_cured": 15,
-    "overall_death": 25,
-    "without_comfirm": 520,
-    "without_cured": 10,
-    "without_death": 1
+      "date": "01-24",
+      "type": "without_cured",
+      "number": 34
   },
   {
-    "date": "01-29",
-    "overall_comfirm": 1529,
-    "overall_cured": 20,
-    "overall_death": 27,
-    "without_comfirm": 689,
-    "without_cured": 15,
-    "without_death": 2
+      "date": "01-25",
+      "type": "overall_comfirm",
+      "number": 539
   },
   {
-    "date": "01-30",
-    "overall_comfirm": 1797,
-    "overall_cured": 8,
-    "overall_death": 39,
-    "without_comfirm": 448,
-    "without_cured": 5,
-    "without_death": 2
+      "date": "01-25",
+      "type": "overall_cured",
+      "number": 4
   },
   {
-    "date": "01-31",
-    "overall_comfirm": 2057,
-    "overall_cured": 94,
-    "overall_death": 42,
-    "without_comfirm": 1154,
-    "without_cured": 43,
-    "without_death": 0
+      "date": "01-25",
+      "type": "overall_death",
+      "number": 16
   },
   {
-    "date": "02-01",
-    "overall_comfirm": 2167,
-    "overall_cured": 52,
-    "overall_death": 47,
-    "without_comfirm": 820,
-    "without_cured": 25,
-    "without_death": 2
+      "date": "01-25",
+      "type": "without_comfirm",
+      "number": 358
   },
   {
-    "date": "02-02",
-    "overall_comfirm": 2690,
-    "overall_cured": 165,
-    "overall_death": 46,
-    "without_comfirm": 769,
-    "without_cured": 66,
-    "without_death": 1
+      "date": "01-25",
+      "type": "without_cured",
+      "number": 3
   },
   {
-    "date": "02-03",
-    "overall_comfirm": 2940,
-    "overall_cured": 133,
-    "overall_death": 58,
-    "without_comfirm": 837,
-    "without_cured": 100,
-    "without_death": 2
+      "date": "01-26",
+      "type": "overall_comfirm",
+      "number": 718
   },
   {
-    "date": "02-04",
-    "overall_comfirm": 3256,
-    "overall_cured": 211,
-    "overall_death": 64,
-    "without_comfirm": 911,
-    "without_cured": 114,
-    "without_death": 0
+      "date": "01-26",
+      "type": "overall_cured",
+      "number": 10
   },
   {
-    "date": "02-05",
-    "overall_comfirm": 3948,
-    "overall_cured": 299,
-    "overall_death": 68,
-    "without_comfirm": 792,
-    "without_cured": 160,
-    "without_death": 3
+      "date": "01-26",
+      "type": "overall_death",
+      "number": 14
   },
   {
-    "date": "02-06",
-    "overall_comfirm": 3798,
-    "overall_cured": 393,
-    "overall_death": 71,
-    "without_comfirm": 811,
-    "without_cured": 217,
-    "without_death": 1
+      "date": "01-26",
+      "type": "without_comfirm",
+      "number": 390
   },
   {
-    "date": "02-07",
-    "overall_comfirm": 3167,
-    "overall_cured": 386,
-    "overall_death": 73,
-    "without_comfirm": 720,
-    "without_cured": 231,
-    "without_death": 4
+      "date": "01-26",
+      "type": "without_cured",
+      "number": 0
   },
   {
-    "date": "02-08",
-    "overall_comfirm": 3455,
-    "overall_cured": 649,
-    "overall_death": 88,
-    "without_comfirm": 614,
-    "without_cured": 298,
-    "without_death": 7
+      "date": "01-27",
+      "type": "overall_comfirm",
+      "number": 889
   },
   {
-    "date": "02-09",
-    "overall_comfirm": 2654,
-    "overall_cured": 542,
-    "overall_death": 89,
-    "without_comfirm": 507,
-    "without_cured": 280,
-    "without_death": 8
+      "date": "01-27",
+      "type": "overall_cured",
+      "number": 12
   },
   {
-    "date": "02-10",
-    "overall_comfirm": 3009,
-    "overall_cured": 682,
-    "overall_death": 96,
-    "without_comfirm": 478,
-    "without_cured": 308,
-    "without_death": 5
+      "date": "01-27",
+      "type": "overall_death",
+      "number": 25
   },
   {
-    "date": "02-11",
-    "overall_comfirm": 2469,
-    "overall_cured": 764,
-    "overall_death": 110,
-    "without_comfirm": 372,
-    "without_cured": 308,
-    "without_death": 7
+      "date": "01-27",
+      "type": "without_comfirm",
+      "number": 524
   },
   {
-    "date": "02-12",
-    "overall_comfirm": 2121,
-    "overall_cured": 797,
-    "overall_death": 100,
-    "without_comfirm": 483,
-    "without_cured": 421,
-    "without_death": 6
+      "date": "01-27",
+      "type": "without_cured",
+      "number": 7
   },
   {
-    "date": "02-13",
-    "overall_comfirm": 15178,
-    "overall_cured": 1217,
-    "overall_death": 253,
-    "without_comfirm": 338,
-    "without_cured": 444,
-    "without_death": 11
+      "date": "01-28",
+      "type": "overall_comfirm",
+      "number": 1811
   },
   {
-    "date": "02-14",
-    "overall_comfirm": 3950,
-    "overall_cured": 857,
-    "overall_death": 14,
-    "without_comfirm": 170,
-    "without_cured": 416,
-    "without_death": 6
+      "date": "01-28",
+      "type": "overall_cured",
+      "number": 15
   },
   {
-    "date": "02-15",
-    "overall_comfirm": 2758,
-    "overall_cured": 1549,
-    "overall_death": 145,
-    "without_comfirm": 338,
-    "without_cured": 628,
-    "without_death": 6
+      "date": "01-28",
+      "type": "overall_death",
+      "number": 25
   },
   {
-    "date": "02-16",
-    "overall_comfirm": 1941,
-    "overall_cured": 1267,
-    "overall_death": 142,
-    "without_comfirm": 98,
-    "without_cured": 422,
-    "without_death": 3
+      "date": "01-28",
+      "type": "without_comfirm",
+      "number": 520
   },
   {
-    "date": "02-17",
-    "overall_comfirm": 2127,
-    "overall_cured": 1628,
-    "overall_death": 105,
-    "without_comfirm": 194,
-    "without_cured": 601,
-    "without_death": 5
+      "date": "01-28",
+      "type": "without_cured",
+      "number": 10
   },
   {
-    "date": "02-18",
-    "overall_comfirm": 1914,
-    "overall_cured": 1784,
-    "overall_death": 100,
-    "without_comfirm": 107,
-    "without_cured": 534,
-    "without_death": 7
+      "date": "01-29",
+      "type": "overall_comfirm",
+      "number": 1529
   },
   {
-    "date": "02-19",
-    "overall_comfirm": 1757,
-    "overall_cured": 1973,
-    "overall_death": 137,
-    "without_comfirm": 64,
-    "without_cured": 580,
-    "without_death": 5
+      "date": "01-29",
+      "type": "overall_cured",
+      "number": 20
   },
   {
-    "date": "02-20",
-    "overall_comfirm": 383,
-    "overall_cured": 1826,
-    "overall_death": 113,
-    "without_comfirm": 34,
-    "without_cured": 641,
-    "without_death": 5
+      "date": "01-29",
+      "type": "overall_death",
+      "number": 27
   },
   {
-    "date": "02-21",
-    "overall_comfirm": 916,
-    "overall_cured": 2040,
-    "overall_death": 118,
-    "without_comfirm": 285,
-    "without_cured": 680,
-    "without_death": 3
+      "date": "01-29",
+      "type": "without_comfirm",
+      "number": 689
   },
   {
-    "date": "02-22",
-    "overall_comfirm": 656,
-    "overall_cured": 2290,
-    "overall_death": 108,
-    "without_comfirm": 136,
-    "without_cured": 481,
-    "without_death": 2
+      "date": "01-29",
+      "type": "without_cured",
+      "number": 15
   },
   {
-    "date": "02-23",
-    "overall_comfirm": 827,
-    "overall_cured": 2307,
-    "overall_death": 99,
-    "without_comfirm": 197,
-    "without_cured": 654,
-    "without_death": 3
+      "date": "01-30",
+      "type": "overall_comfirm",
+      "number": 1797
   },
   {
-    "date": "02-24",
-    "overall_comfirm": 51,
-    "overall_cured": 1726,
-    "overall_death": 149,
-    "without_comfirm": 152,
-    "without_cured": 321,
-    "without_death": 0
+      "date": "01-30",
+      "type": "overall_cured",
+      "number": 8
   },
   {
-    "date": "02-25",
-    "overall_comfirm": 417,
-    "overall_cured": 2647,
-    "overall_death": 68,
-    "without_comfirm": 82,
-    "without_cured": 424,
-    "without_death": 0
+      "date": "01-30",
+      "type": "overall_death",
+      "number": 39
   },
   {
-    "date": "02-26",
-    "overall_comfirm": 500,
-    "overall_cured": 2511,
-    "overall_death": 54,
-    "without_comfirm": 99,
-    "without_cured": 513,
-    "without_death": 2
+      "date": "01-30",
+      "type": "without_comfirm",
+      "number": 448
   },
   {
-    "date": "02-27",
-    "overall_comfirm": 499,
-    "overall_cured": 2894,
-    "overall_death": 30,
-    "without_comfirm": 90,
-    "without_cured": 480,
-    "without_death": 4
+      "date": "01-30",
+      "type": "without_cured",
+      "number": 5
   },
   {
-    "date": "02-28",
-    "overall_comfirm": 80,
-    "overall_cured": 3227,
-    "overall_death": 45,
-    "without_comfirm": 238,
-    "without_cured": 207,
-    "without_death": 4
+      "date": "01-31",
+      "type": "overall_comfirm",
+      "number": 2057
   },
   {
-    "date": "02-29",
-    "overall_comfirm": 530,
-    "overall_cured": 3121,
-    "overall_death": 47,
-    "without_comfirm": 107,
-    "without_cured": 531,
-    "without_death": 2
+      "date": "01-31",
+      "type": "overall_cured",
+      "number": 94
   },
   {
-    "date": "03-01",
-    "overall_comfirm": 595,
-    "overall_cured": 2891,
-    "overall_death": 37,
-    "without_comfirm": 25,
-    "without_cured": 348,
-    "without_death": 3
+      "date": "01-31",
+      "type": "overall_death",
+      "number": 42
   },
   {
-    "date": "03-02",
-    "overall_comfirm": 20,
-    "overall_cured": 2504,
-    "overall_death": 33,
-    "without_comfirm": 216,
-    "without_cured": 106,
-    "without_death": 9
+      "date": "01-31",
+      "type": "without_comfirm",
+      "number": 1154
   },
   {
-    "date": "03-03",
-    "overall_comfirm": 585,
-    "overall_cured": 3019,
-    "overall_death": 44,
-    "without_comfirm": 471,
-    "without_cured": 745,
-    "without_death": 12
+      "date": "01-31",
+      "type": "without_cured",
+      "number": 43
+  },
+  {
+      "date": "02-01",
+      "type": "overall_comfirm",
+      "number": 2167
+  },
+  {
+      "date": "02-01",
+      "type": "overall_cured",
+      "number": 52
+  },
+  {
+      "date": "02-01",
+      "type": "overall_death",
+      "number": 47
+  },
+  {
+      "date": "02-01",
+      "type": "without_comfirm",
+      "number": 820
+  },
+  {
+      "date": "02-01",
+      "type": "without_cured",
+      "number": 25
+  },
+  {
+      "date": "02-02",
+      "type": "overall_comfirm",
+      "number": 2690
+  },
+  {
+      "date": "02-02",
+      "type": "overall_cured",
+      "number": 165
+  },
+  {
+      "date": "02-02",
+      "type": "overall_death",
+      "number": 46
+  },
+  {
+      "date": "02-02",
+      "type": "without_comfirm",
+      "number": 769
+  },
+  {
+      "date": "02-02",
+      "type": "without_cured",
+      "number": 66
+  },
+  {
+      "date": "02-03",
+      "type": "overall_comfirm",
+      "number": 2940
+  },
+  {
+      "date": "02-03",
+      "type": "overall_cured",
+      "number": 133
+  },
+  {
+      "date": "02-03",
+      "type": "overall_death",
+      "number": 58
+  },
+  {
+      "date": "02-03",
+      "type": "without_comfirm",
+      "number": 837
+  },
+  {
+      "date": "02-03",
+      "type": "without_cured",
+      "number": 100
+  },
+  {
+      "date": "02-04",
+      "type": "overall_comfirm",
+      "number": 3256
+  },
+  {
+      "date": "02-04",
+      "type": "overall_cured",
+      "number": 211
+  },
+  {
+      "date": "02-04",
+      "type": "overall_death",
+      "number": 64
+  },
+  {
+      "date": "02-04",
+      "type": "without_comfirm",
+      "number": 911
+  },
+  {
+      "date": "02-04",
+      "type": "without_cured",
+      "number": 114
+  },
+  {
+      "date": "02-05",
+      "type": "overall_comfirm",
+      "number": 3948
+  },
+  {
+      "date": "02-05",
+      "type": "overall_cured",
+      "number": 299
+  },
+  {
+      "date": "02-05",
+      "type": "overall_death",
+      "number": 68
+  },
+  {
+      "date": "02-05",
+      "type": "without_comfirm",
+      "number": 792
+  },
+  {
+      "date": "02-05",
+      "type": "without_cured",
+      "number": 160
+  },
+  {
+      "date": "02-06",
+      "type": "overall_comfirm",
+      "number": 3798
+  },
+  {
+      "date": "02-06",
+      "type": "overall_cured",
+      "number": 393
+  },
+  {
+      "date": "02-06",
+      "type": "overall_death",
+      "number": 71
+  },
+  {
+      "date": "02-06",
+      "type": "without_comfirm",
+      "number": 811
+  },
+  {
+      "date": "02-06",
+      "type": "without_cured",
+      "number": 217
+  },
+  {
+      "date": "02-07",
+      "type": "overall_comfirm",
+      "number": 3167
+  },
+  {
+      "date": "02-07",
+      "type": "overall_cured",
+      "number": 386
+  },
+  {
+      "date": "02-07",
+      "type": "overall_death",
+      "number": 73
+  },
+  {
+      "date": "02-07",
+      "type": "without_comfirm",
+      "number": 720
+  },
+  {
+      "date": "02-07",
+      "type": "without_cured",
+      "number": 231
+  },
+  {
+      "date": "02-08",
+      "type": "overall_comfirm",
+      "number": 3455
+  },
+  {
+      "date": "02-08",
+      "type": "overall_cured",
+      "number": 649
+  },
+  {
+      "date": "02-08",
+      "type": "overall_death",
+      "number": 88
+  },
+  {
+      "date": "02-08",
+      "type": "without_comfirm",
+      "number": 614
+  },
+  {
+      "date": "02-08",
+      "type": "without_cured",
+      "number": 298
+  },
+  {
+      "date": "02-09",
+      "type": "overall_comfirm",
+      "number": 2654
+  },
+  {
+      "date": "02-09",
+      "type": "overall_cured",
+      "number": 542
+  },
+  {
+      "date": "02-09",
+      "type": "overall_death",
+      "number": 89
+  },
+  {
+      "date": "02-09",
+      "type": "without_comfirm",
+      "number": 507
+  },
+  {
+      "date": "02-09",
+      "type": "without_cured",
+      "number": 280
+  },
+  {
+      "date": "02-10",
+      "type": "overall_comfirm",
+      "number": 3009
+  },
+  {
+      "date": "02-10",
+      "type": "overall_cured",
+      "number": 682
+  },
+  {
+      "date": "02-10",
+      "type": "overall_death",
+      "number": 96
+  },
+  {
+      "date": "02-10",
+      "type": "without_comfirm",
+      "number": 478
+  },
+  {
+      "date": "02-10",
+      "type": "without_cured",
+      "number": 308
+  },
+  {
+      "date": "02-11",
+      "type": "overall_comfirm",
+      "number": 2469
+  },
+  {
+      "date": "02-11",
+      "type": "overall_cured",
+      "number": 764
+  },
+  {
+      "date": "02-11",
+      "type": "overall_death",
+      "number": 110
+  },
+  {
+      "date": "02-11",
+      "type": "without_comfirm",
+      "number": 372
+  },
+  {
+      "date": "02-11",
+      "type": "without_cured",
+      "number": 308
+  },
+  {
+      "date": "02-12",
+      "type": "overall_comfirm",
+      "number": 2121
+  },
+  {
+      "date": "02-12",
+      "type": "overall_cured",
+      "number": 797
+  },
+  {
+      "date": "02-12",
+      "type": "overall_death",
+      "number": 100
+  },
+  {
+      "date": "02-12",
+      "type": "without_comfirm",
+      "number": 483
+  },
+  {
+      "date": "02-12",
+      "type": "without_cured",
+      "number": 421
+  },
+  {
+      "date": "02-13",
+      "type": "overall_comfirm",
+      "number": 15178
+  },
+  {
+      "date": "02-13",
+      "type": "overall_cured",
+      "number": 1217
+  },
+  {
+      "date": "02-13",
+      "type": "overall_death",
+      "number": 253
+  },
+  {
+      "date": "02-13",
+      "type": "without_comfirm",
+      "number": 338
+  },
+  {
+      "date": "02-13",
+      "type": "without_cured",
+      "number": 444
+  },
+  {
+      "date": "02-14",
+      "type": "overall_comfirm",
+      "number": 3950
+  },
+  {
+      "date": "02-14",
+      "type": "overall_cured",
+      "number": 857
+  },
+  {
+      "date": "02-14",
+      "type": "overall_death",
+      "number": 14
+  },
+  {
+      "date": "02-14",
+      "type": "without_comfirm",
+      "number": 170
+  },
+  {
+      "date": "02-14",
+      "type": "without_cured",
+      "number": 416
+  },
+  {
+      "date": "02-15",
+      "type": "overall_comfirm",
+      "number": 2758
+  },
+  {
+      "date": "02-15",
+      "type": "overall_cured",
+      "number": 1549
+  },
+  {
+      "date": "02-15",
+      "type": "overall_death",
+      "number": 145
+  },
+  {
+      "date": "02-15",
+      "type": "without_comfirm",
+      "number": 338
+  },
+  {
+      "date": "02-15",
+      "type": "without_cured",
+      "number": 628
+  },
+  {
+      "date": "02-16",
+      "type": "overall_comfirm",
+      "number": 1941
+  },
+  {
+      "date": "02-16",
+      "type": "overall_cured",
+      "number": 1267
+  },
+  {
+      "date": "02-16",
+      "type": "overall_death",
+      "number": 142
+  },
+  {
+      "date": "02-16",
+      "type": "without_comfirm",
+      "number": 98
+  },
+  {
+      "date": "02-16",
+      "type": "without_cured",
+      "number": 422
+  },
+  {
+      "date": "02-17",
+      "type": "overall_comfirm",
+      "number": 2127
+  },
+  {
+      "date": "02-17",
+      "type": "overall_cured",
+      "number": 1628
+  },
+  {
+      "date": "02-17",
+      "type": "overall_death",
+      "number": 105
+  },
+  {
+      "date": "02-17",
+      "type": "without_comfirm",
+      "number": 194
+  },
+  {
+      "date": "02-17",
+      "type": "without_cured",
+      "number": 601
+  },
+  {
+      "date": "02-18",
+      "type": "overall_comfirm",
+      "number": 1914
+  },
+  {
+      "date": "02-18",
+      "type": "overall_cured",
+      "number": 1784
+  },
+  {
+      "date": "02-18",
+      "type": "overall_death",
+      "number": 100
+  },
+  {
+      "date": "02-18",
+      "type": "without_comfirm",
+      "number": 107
+  },
+  {
+      "date": "02-18",
+      "type": "without_cured",
+      "number": 534
+  },
+  {
+      "date": "02-19",
+      "type": "overall_comfirm",
+      "number": 1757
+  },
+  {
+      "date": "02-19",
+      "type": "overall_cured",
+      "number": 1973
+  },
+  {
+      "date": "02-19",
+      "type": "overall_death",
+      "number": 137
+  },
+  {
+      "date": "02-19",
+      "type": "without_comfirm",
+      "number": 64
+  },
+  {
+      "date": "02-19",
+      "type": "without_cured",
+      "number": 580
+  },
+  {
+      "date": "02-20",
+      "type": "overall_comfirm",
+      "number": 383
+  },
+  {
+      "date": "02-20",
+      "type": "overall_cured",
+      "number": 1826
+  },
+  {
+      "date": "02-20",
+      "type": "overall_death",
+      "number": 113
+  },
+  {
+      "date": "02-20",
+      "type": "without_comfirm",
+      "number": 34
+  },
+  {
+      "date": "02-20",
+      "type": "without_cured",
+      "number": 641
+  },
+  {
+      "date": "02-21",
+      "type": "overall_comfirm",
+      "number": 916
+  },
+  {
+      "date": "02-21",
+      "type": "overall_cured",
+      "number": 2040
+  },
+  {
+      "date": "02-21",
+      "type": "overall_death",
+      "number": 118
+  },
+  {
+      "date": "02-21",
+      "type": "without_comfirm",
+      "number": 285
+  },
+  {
+      "date": "02-21",
+      "type": "without_cured",
+      "number": 680
+  },
+  {
+      "date": "02-22",
+      "type": "overall_comfirm",
+      "number": 656
+  },
+  {
+      "date": "02-22",
+      "type": "overall_cured",
+      "number": 2290
+  },
+  {
+      "date": "02-22",
+      "type": "overall_death",
+      "number": 108
+  },
+  {
+      "date": "02-22",
+      "type": "without_comfirm",
+      "number": 136
+  },
+  {
+      "date": "02-22",
+      "type": "without_cured",
+      "number": 481
+  },
+  {
+      "date": "02-23",
+      "type": "overall_comfirm",
+      "number": 827
+  },
+  {
+      "date": "02-23",
+      "type": "overall_cured",
+      "number": 2307
+  },
+  {
+      "date": "02-23",
+      "type": "overall_death",
+      "number": 99
+  },
+  {
+      "date": "02-23",
+      "type": "without_comfirm",
+      "number": 197
+  },
+  {
+      "date": "02-23",
+      "type": "without_cured",
+      "number": 654
+  },
+  {
+      "date": "02-24",
+      "type": "overall_comfirm",
+      "number": 51
+  },
+  {
+      "date": "02-24",
+      "type": "overall_cured",
+      "number": 1726
+  },
+  {
+      "date": "02-24",
+      "type": "overall_death",
+      "number": 149
+  },
+  {
+      "date": "02-24",
+      "type": "without_comfirm",
+      "number": 152
+  },
+  {
+      "date": "02-24",
+      "type": "without_cured",
+      "number": 321
+  },
+  {
+      "date": "02-25",
+      "type": "overall_comfirm",
+      "number": 417
+  },
+  {
+      "date": "02-25",
+      "type": "overall_cured",
+      "number": 2647
+  },
+  {
+      "date": "02-25",
+      "type": "overall_death",
+      "number": 68
+  },
+  {
+      "date": "02-25",
+      "type": "without_comfirm",
+      "number": 82
+  },
+  {
+      "date": "02-25",
+      "type": "without_cured",
+      "number": 424
+  },
+  {
+      "date": "02-26",
+      "type": "overall_comfirm",
+      "number": 500
+  },
+  {
+      "date": "02-26",
+      "type": "overall_cured",
+      "number": 2511
+  },
+  {
+      "date": "02-26",
+      "type": "overall_death",
+      "number": 54
+  },
+  {
+      "date": "02-26",
+      "type": "without_comfirm",
+      "number": 99
+  },
+  {
+      "date": "02-26",
+      "type": "without_cured",
+      "number": 513
+  },
+  {
+      "date": "02-27",
+      "type": "overall_comfirm",
+      "number": 499
+  },
+  {
+      "date": "02-27",
+      "type": "overall_cured",
+      "number": 2894
+  },
+  {
+      "date": "02-27",
+      "type": "overall_death",
+      "number": 30
+  },
+  {
+      "date": "02-27",
+      "type": "without_comfirm",
+      "number": 90
+  },
+  {
+      "date": "02-27",
+      "type": "without_cured",
+      "number": 480
+  },
+  {
+      "date": "02-28",
+      "type": "overall_comfirm",
+      "number": 80
+  },
+  {
+      "date": "02-28",
+      "type": "overall_cured",
+      "number": 3227
+  },
+  {
+      "date": "02-28",
+      "type": "overall_death",
+      "number": 45
+  },
+  {
+      "date": "02-28",
+      "type": "without_comfirm",
+      "number": 238
+  },
+  {
+      "date": "02-28",
+      "type": "without_cured",
+      "number": 207
+  },
+  {
+      "date": "02-29",
+      "type": "overall_comfirm",
+      "number": 530
+  },
+  {
+      "date": "02-29",
+      "type": "overall_cured",
+      "number": 3121
+  },
+  {
+      "date": "02-29",
+      "type": "overall_death",
+      "number": 47
+  },
+  {
+      "date": "02-29",
+      "type": "without_comfirm",
+      "number": 107
+  },
+  {
+      "date": "02-29",
+      "type": "without_cured",
+      "number": 531
+  },
+  {
+      "date": "03-01",
+      "type": "overall_comfirm",
+      "number": 595
+  },
+  {
+      "date": "03-01",
+      "type": "overall_cured",
+      "number": 2891
+  },
+  {
+      "date": "03-01",
+      "type": "overall_death",
+      "number": 37
+  },
+  {
+      "date": "03-01",
+      "type": "without_comfirm",
+      "number": 25
+  },
+  {
+      "date": "03-01",
+      "type": "without_cured",
+      "number": 348
+  },
+  {
+      "date": "03-02",
+      "type": "overall_comfirm",
+      "number": 20
+  },
+  {
+      "date": "03-02",
+      "type": "overall_cured",
+      "number": 2504
+  },
+  {
+      "date": "03-02",
+      "type": "overall_death",
+      "number": 33
+  },
+  {
+      "date": "03-02",
+      "type": "without_comfirm",
+      "number": 216
+  },
+  {
+      "date": "03-02",
+      "type": "without_cured",
+      "number": 106
+  },
+  {
+      "date": "03-03",
+      "type": "overall_comfirm",
+      "number": 585
+  },
+  {
+      "date": "03-03",
+      "type": "overall_cured",
+      "number": 3019
+  },
+  {
+      "date": "03-03",
+      "type": "overall_death",
+      "number": 44
+  },
+  {
+      "date": "03-03",
+      "type": "without_comfirm",
+      "number": 471
+  },
+  {
+      "date": "03-03",
+      "type": "without_cured",
+      "number": 745
   }
 ]

@@ -18,14 +18,13 @@
     <!-- Container for the visualization -->
     <div id="container"></div>
     <script>
-        fetch('./data/data.json')
+        fetch('https://yxwxw.github.io/data/data.json')
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                const chart = new Chart({
+                const chart = new G2.Chart({
                     container: 'container',
                     autoFit: true,
-                    height: 500
+                    height: 500,
                 });
                 chart.data(data);
                 chart.scale({
@@ -34,11 +33,23 @@
                     },
                     overall_comfirm: {
                         nice: true,
+                    },
+                    overall_cured: {
+                        nice: true,
+                    },
+                    overall_death: {
+                        nice: true,
+                    },
+                    without_comfirm: {
+                        nice: true
                     }
                 });
-            })
-            chart.line().position('date*overall_comfirm');
-            chart.render();
+
+                chart.line().position('date*overall_comfirm').shape('smooth');
+                chart.line().position('date*overall_cured').shape('smooth');
+                chart.line().position('date*overall_death').shape('smooth');
+                chart.render();
+            });
     </script>
 </body>
 
