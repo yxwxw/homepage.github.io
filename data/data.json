@@ -1,1202 +1,1202 @@
 [
     {
         "date": "01-24",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 910
     },
     {
         "date": "01-24",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 37
     },
     {
         "date": "01-24",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 26
     },
     {
         "date": "01-24",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 805
     },
     {
         "date": "01-24",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 34
     },
     {
         "date": "01-24",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 19
     },
     {
         "date": "01-25",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 539
     },
     {
         "date": "01-25",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 4
     },
     {
         "date": "01-25",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 16
     },
     {
         "date": "01-25",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 358
     },
     {
         "date": "01-25",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 3
     },
     {
         "date": "01-25",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 1
     },
     {
         "date": "01-26",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 718
     },
     {
         "date": "01-26",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 10
     },
     {
         "date": "01-26",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 14
     },
     {
         "date": "01-26",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 390
     },
     {
         "date": "01-26",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 0
     },
     {
         "date": "01-26",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 1
     },
     {
         "date": "01-27",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 889
     },
     {
         "date": "01-27",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 12
     },
     {
         "date": "01-27",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 25
     },
     {
         "date": "01-27",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 524
     },
     {
         "date": "01-27",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 7
     },
     {
         "date": "01-27",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 1
     },
     {
         "date": "01-28",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 1811
     },
     {
         "date": "01-28",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 15
     },
     {
         "date": "01-28",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 25
     },
     {
         "date": "01-28",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 520
     },
     {
         "date": "01-28",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 10
     },
     {
         "date": "01-28",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 1
     },
     {
         "date": "01-29",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 1529
     },
     {
         "date": "01-29",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 20
     },
     {
         "date": "01-29",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 27
     },
     {
         "date": "01-29",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 689
     },
     {
         "date": "01-29",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 15
     },
     {
         "date": "01-29",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 2
     },
     {
         "date": "01-30",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 1797
     },
     {
         "date": "01-30",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 8
     },
     {
         "date": "01-30",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 39
     },
     {
         "date": "01-30",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 448
     },
     {
         "date": "01-30",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 5
     },
     {
         "date": "01-30",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 2
     },
     {
         "date": "01-31",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2057
     },
     {
         "date": "01-31",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 94
     },
     {
         "date": "01-31",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 42
     },
     {
         "date": "01-31",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 1154
     },
     {
         "date": "01-31",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 43
     },
     {
         "date": "01-31",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 0
     },
     {
         "date": "02-01",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2167
     },
     {
         "date": "02-01",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 52
     },
     {
         "date": "02-01",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 47
     },
     {
         "date": "02-01",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 820
     },
     {
         "date": "02-01",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 25
     },
     {
         "date": "02-01",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 2
     },
     {
         "date": "02-02",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2690
     },
     {
         "date": "02-02",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 165
     },
     {
         "date": "02-02",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 46
     },
     {
         "date": "02-02",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 769
     },
     {
         "date": "02-02",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 66
     },
     {
         "date": "02-02",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 1
     },
     {
         "date": "02-03",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2940
     },
     {
         "date": "02-03",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 133
     },
     {
         "date": "02-03",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 58
     },
     {
         "date": "02-03",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 837
     },
     {
         "date": "02-03",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 100
     },
     {
         "date": "02-03",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 2
     },
     {
         "date": "02-04",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 3256
     },
     {
         "date": "02-04",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 211
     },
     {
         "date": "02-04",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 64
     },
     {
         "date": "02-04",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 911
     },
     {
         "date": "02-04",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 114
     },
     {
         "date": "02-04",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 0
     },
     {
         "date": "02-05",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 3948
     },
     {
         "date": "02-05",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 299
     },
     {
         "date": "02-05",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 68
     },
     {
         "date": "02-05",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 792
     },
     {
         "date": "02-05",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 160
     },
     {
         "date": "02-05",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 3
     },
     {
         "date": "02-06",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 3798
     },
     {
         "date": "02-06",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 393
     },
     {
         "date": "02-06",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 71
     },
     {
         "date": "02-06",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 811
     },
     {
         "date": "02-06",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 217
     },
     {
         "date": "02-06",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 1
     },
     {
         "date": "02-07",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 3167
     },
     {
         "date": "02-07",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 386
     },
     {
         "date": "02-07",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 73
     },
     {
         "date": "02-07",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 720
     },
     {
         "date": "02-07",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 231
     },
     {
         "date": "02-07",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 4
     },
     {
         "date": "02-08",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 3455
     },
     {
         "date": "02-08",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 649
     },
     {
         "date": "02-08",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 88
     },
     {
         "date": "02-08",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 614
     },
     {
         "date": "02-08",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 298
     },
     {
         "date": "02-08",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 7
     },
     {
         "date": "02-09",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2654
     },
     {
         "date": "02-09",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 542
     },
     {
         "date": "02-09",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 89
     },
     {
         "date": "02-09",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 507
     },
     {
         "date": "02-09",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 280
     },
     {
         "date": "02-09",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 8
     },
     {
         "date": "02-10",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 3009
     },
     {
         "date": "02-10",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 682
     },
     {
         "date": "02-10",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 96
     },
     {
         "date": "02-10",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 478
     },
     {
         "date": "02-10",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 308
     },
     {
         "date": "02-10",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 5
     },
     {
         "date": "02-11",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2469
     },
     {
         "date": "02-11",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 764
     },
     {
         "date": "02-11",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 110
     },
     {
         "date": "02-11",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 372
     },
     {
         "date": "02-11",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 308
     },
     {
         "date": "02-11",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 7
     },
     {
         "date": "02-12",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2121
     },
     {
         "date": "02-12",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 797
     },
     {
         "date": "02-12",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 100
     },
     {
         "date": "02-12",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 483
     },
     {
         "date": "02-12",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 421
     },
     {
         "date": "02-12",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 6
     },
     {
         "date": "02-13",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 15178
     },
     {
         "date": "02-13",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 1217
     },
     {
         "date": "02-13",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 253
     },
     {
         "date": "02-13",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 338
     },
     {
         "date": "02-13",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 444
     },
     {
         "date": "02-13",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 11
     },
     {
         "date": "02-14",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 3950
     },
     {
         "date": "02-14",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 857
     },
     {
         "date": "02-14",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 14
     },
     {
         "date": "02-14",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 170
     },
     {
         "date": "02-14",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 416
     },
     {
         "date": "02-14",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 6
     },
     {
         "date": "02-15",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2758
     },
     {
         "date": "02-15",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 1549
     },
     {
         "date": "02-15",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 145
     },
     {
         "date": "02-15",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 338
     },
     {
         "date": "02-15",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 628
     },
     {
         "date": "02-15",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 6
     },
     {
         "date": "02-16",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 1941
     },
     {
         "date": "02-16",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 1267
     },
     {
         "date": "02-16",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 142
     },
     {
         "date": "02-16",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 98
     },
     {
         "date": "02-16",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 422
     },
     {
         "date": "02-16",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 3
     },
     {
         "date": "02-17",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 2127
     },
     {
         "date": "02-17",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 1628
     },
     {
         "date": "02-17",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 105
     },
     {
         "date": "02-17",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 194
     },
     {
         "date": "02-17",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 601
     },
     {
         "date": "02-17",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 5
     },
     {
         "date": "02-18",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 1914
     },
     {
         "date": "02-18",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 1784
     },
     {
         "date": "02-18",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 100
     },
     {
         "date": "02-18",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 107
     },
     {
         "date": "02-18",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 534
     },
     {
         "date": "02-18",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 7
     },
     {
         "date": "02-19",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 1757
     },
     {
         "date": "02-19",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 1973
     },
     {
         "date": "02-19",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 137
     },
     {
         "date": "02-19",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 64
     },
     {
         "date": "02-19",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 580
     },
     {
         "date": "02-19",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 5
     },
     {
         "date": "02-20",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 383
     },
     {
         "date": "02-20",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 1826
     },
     {
         "date": "02-20",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 113
     },
     {
         "date": "02-20",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 34
     },
     {
         "date": "02-20",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 641
     },
     {
         "date": "02-20",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 5
     },
     {
         "date": "02-21",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 916
     },
     {
         "date": "02-21",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 2040
     },
     {
         "date": "02-21",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 118
     },
     {
         "date": "02-21",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 285
     },
     {
         "date": "02-21",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 680
     },
     {
         "date": "02-21",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 3
     },
     {
         "date": "02-22",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 656
     },
     {
         "date": "02-22",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 2290
     },
     {
         "date": "02-22",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 108
     },
     {
         "date": "02-22",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 136
     },
     {
         "date": "02-22",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 481
     },
     {
         "date": "02-22",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 2
     },
     {
         "date": "02-23",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 827
     },
     {
         "date": "02-23",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 2307
     },
     {
         "date": "02-23",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 99
     },
     {
         "date": "02-23",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 197
     },
     {
         "date": "02-23",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 654
     },
     {
         "date": "02-23",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 3
     },
     {
         "date": "02-24",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 51
     },
     {
         "date": "02-24",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 1726
     },
     {
         "date": "02-24",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 149
     },
     {
         "date": "02-24",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 152
     },
     {
         "date": "02-24",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 321
     },
     {
         "date": "02-24",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 0
     },
     {
         "date": "02-25",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 417
     },
     {
         "date": "02-25",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 2647
     },
     {
         "date": "02-25",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 68
     },
     {
         "date": "02-25",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 82
     },
     {
         "date": "02-25",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 424
     },
     {
         "date": "02-25",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 0
     },
     {
         "date": "02-26",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 500
     },
     {
         "date": "02-26",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 2511
     },
     {
         "date": "02-26",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 54
     },
     {
         "date": "02-26",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 99
     },
     {
         "date": "02-26",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 513
     },
     {
         "date": "02-26",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 2
     },
     {
         "date": "02-27",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 499
     },
     {
         "date": "02-27",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 2894
     },
     {
         "date": "02-27",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 30
     },
     {
         "date": "02-27",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 90
     },
     {
         "date": "02-27",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 480
     },
     {
         "date": "02-27",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 4
     },
     {
         "date": "02-28",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 80
     },
     {
         "date": "02-28",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 3227
     },
     {
         "date": "02-28",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 45
     },
     {
         "date": "02-28",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 238
     },
     {
         "date": "02-28",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 207
     },
     {
         "date": "02-28",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 4
     },
     {
         "date": "02-29",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 530
     },
     {
         "date": "02-29",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 3121
     },
     {
         "date": "02-29",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 47
     },
     {
         "date": "02-29",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 107
     },
     {
         "date": "02-29",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 531
     },
     {
         "date": "02-29",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 2
     },
     {
         "date": "03-01",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 595
     },
     {
         "date": "03-01",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 2891
     },
     {
         "date": "03-01",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 37
     },
     {
         "date": "03-01",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 25
     },
     {
         "date": "03-01",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 348
     },
     {
         "date": "03-01",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 3
     },
     {
         "date": "03-02",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 20
     },
     {
         "date": "03-02",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 2504
     },
     {
         "date": "03-02",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 33
     },
     {
         "date": "03-02",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 216
     },
     {
         "date": "03-02",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 106
     },
     {
         "date": "03-02",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 9
     },
     {
         "date": "03-03",
-        "type": "overall_comfirm",
+        "type": "全国确诊",
         "number": 585
     },
     {
         "date": "03-03",
-        "type": "overall_cured",
+        "type": "全国治愈",
         "number": 3019
     },
     {
         "date": "03-03",
-        "type": "overall_death",
+        "type": "全国死亡",
         "number": 44
     },
     {
         "date": "03-03",
-        "type": "without_comfirm",
+        "type": "湖北以外确诊",
         "number": 471
     },
     {
         "date": "03-03",
-        "type": "without_cured",
+        "type": "湖北以外治愈",
         "number": 745
     },
     {
         "date": "03-03",
-        "type": "without_death",
+        "type": "湖北以外死亡",
         "number": 12
     }
 ]
