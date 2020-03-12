@@ -24,12 +24,6 @@
         circleEnter.attr("r", function (d) { return Math.sqrt(d); });
         circleEnter.attr("fill", "steelblue");
 
-        d3.csv("http://192.168.112.1:8080/cars.csv", function(d) {
-            return {
-                name: d.name,
-                year: d.year
-            };         
-        });
     </script>
 </body>
 
