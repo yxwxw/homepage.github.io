@@ -1,0 +1,99 @@
+<!doctype html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Brushing Example</title>
+    <link rel="stylesheet" type="text/css" href="css/d3.parcoords.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="lib/d3.js"></script>
+    <script src="lib/d3.svg.multibrush.js"></script>
+    <script src="lib/d3.parcoords.js"></script>
+</head>
+
+<body>
+    <div id="example" class="parcoords" style="width:960px;height:200px;"></div>
+    <p>
+        <label for="sltBrushMode">Brush mode:</label>
+        <select id="sltBrushMode">
+        </select>
+        <label id="lblPredicate" for="sltPredicate">Predicate:</label>
+        <select id="sltPredicate">
+            <option>AND</option>
+            <option>OR</option>
+        </select>
+        <button id="btnReset">Reset Brushes</button>
+    </p>
+</body>
+
+<script>
+    var blue_to_brown = d3.scale.quantize()
+    // 年份对应颜色
+    // 找个库用到的是d3 的 v3 比较老
+        .domain([14, 15, 16, 17, 18, 19, 20])
+        .range([
+            "#ff7f0e",
+            "#2ca02c",
+            "#d62728",
+            "#9467bd",
+            "#8c564b",
+            "#e377c2",
+            "#7f7f7f"]);
+
+    var color = function (d) { return blue_to_brown(d['year']); };
+
+    var parcoords = d3.parcoords()("#example")
+        .color(color)
+        .alpha(0.8);
+
+    // 除了设定color函数，其他要做的不多
+    d3.csv('https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/air_Beijing.csv', function (data) {
+        parcoords
+            .data(data)
+            .hideAxis(["range"])
+            .composite("darker")
+            .render()
+            .shadows()
+            .reorderable()
+            .brushMode("1D-axes");  
+    });
+
+    // 一下是设置各种模式
+    var sltBrushMode = d3.select('#sltBrushMode')
+
+    sltBrushMode.selectAll('option')
+        .data(parcoords.brushModes())
+        .enter()
+        .append('option')
+        .text(function (d) { return d; });
+
+    sltBrushMode.on('change', function () {
+        parcoords.brushMode(this.value);
+        switch (this.value) {
+            case 'None':
+                d3.select("#pStrums").style("visibility", "hidden");
+                d3.select("#lblPredicate").style("visibility", "hidden");
+                d3.select("#sltPredicate").style("visibility", "hidden");
+                d3.select("#btnReset").style("visibility", "hidden");
+                break;
+            case '2D-strums':
+                d3.select("#pStrums").style("visibility", "visible");
+                break;
+            default:
+                d3.select("#pStrums").style("visibility", "hidden");
+                d3.select("#lblPredicate").style("visibility", "visible");
+                d3.select("#sltPredicate").style("visibility", "visible");
+                d3.select("#btnReset").style("visibility", "visible");
+                break;
+        }
+    });
+
+    sltBrushMode.property('value', '1D-axes');
+
+    d3.select('#btnReset').on('click', function () { parcoords.brushReset(); })
+    d3.select('#sltPredicate').on('change', function () {
+        parcoords.brushPredicate(this.value);
+    });
+</script>
+
+</html>

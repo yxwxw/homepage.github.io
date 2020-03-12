@@ -9,12 +9,13 @@
 
 </body>
 <script>
-    // set the dimensions and margins of the graph
+    // 确定margin width height
+    // bar 用于图例
     var margin = { top: 30, right: 50, bottom: 10, left: 50 },
         width = 1440 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom,
         bar = 100;
-    // append the svg object to the body of the page
+
     var svg = d3.select("body")
         .append("svg")
         .attr("width", width + margin.left + margin.right + bar)
@@ -26,8 +27,9 @@
     // d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/iris.csv", function (data) {
     d3.csv("https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/cars.csv").then(function (data) {
         var color = d3.scaleOrdinal(d3.schemePaired)
+        console.log(d3.schemeCategory10);
 
-        // Here I set the list of dimension manually to control the order of axis:
+        // 从columns中过滤出非'name'和非'series'        
         dimensions = data.columns.filter(function (iter) {
             return iter != 'name' && iter != 'series';
         })
@@ -49,6 +51,7 @@
         });
         names = uniq(names);
 
+        // 图例的group
         var legendgroup = svg.selectAll(".legend")
             .data(names)
             .enter()
@@ -59,15 +62,18 @@
                 }
             )
 
+        // status 用于记录一种车(颜色)是否被高亮
+        // 1为被高亮 0为没有被高亮
         var status = {};
         for (i in names) {
             status[names[i]] = 0;
         }
         console.log(status);
 
-
-        // For each dimension, I build a linear scale. I store all in a y object
         var y = {}
+        // linear 表示连续的比例尺
+        // extent 用于找最大最小值
+        // clamp  防止越界
         for (i in dimensions) {
             name = dimensions[i]
             y[name] = d3.scaleLinear()
@@ -78,11 +84,13 @@
             y[name].clamp(true);
         }
 
-        // Build the X scale -> it find the best position for each Y axis
+        // x坐标比例尺
         x = d3.scalePoint()
             .range([0, width])
             .domain(dimensions);
 
+        // 响应点击图例事件
+        // 若颜色没有高亮，该颜色高亮 否则变灰
         var click = function (d) {
 
             selected_name = d;
@@ -103,6 +111,7 @@
         }
 
         var hasFlush = 0;
+        // 让所有颜色都变灰色 或者 都高亮
         var click2 = function (d) {
             if (hasFlush) {
                 d3.selectAll(".line")
@@ -119,7 +128,7 @@
             }
         }
 
-        // Highlight the specie that is hovered
+        // 高亮鼠标放上去的线
         var highlight = function (d) {
 
             selected_name = d.name
@@ -136,7 +145,7 @@
                 .style("opacity", "1")
         }
 
-        // Unhighlight
+        // 恢复所有线都高亮
         var doNotHighlight = function (d) {
             d3.selectAll(".line")
                 .transition().duration(200).delay(1000)
@@ -144,7 +153,6 @@
                 .style("opacity", "1")
         }
 
-        // The path function take a row of the csv as input, and return x and y coordinates of the line to draw for this raw.
         function path(d) {
             return d3.line()(dimensions.map(function (p) {
                 let c = [x(p), y[p](d[p])]
@@ -152,6 +160,7 @@
             }));
         }
 
+        // 添加图例和对应的文字
         legendgroup.append('circle')
             .attr("cx", 0)
             .attr("cy", 0)
@@ -176,13 +185,13 @@
             .text("flush")
             .on("click", click2);
 
-        // Draw the lines
+        // 画线
         svg
             .selectAll("myPath")
             .data(data)
             .enter()
             .append("path")
-            .attr("class", function (d) { return "line " + d.name }) // 2 class for each line: 'line' and the group name
+            .attr("class", function (d) { return "line " + d.name })
             .attr("d", path)
             .style("fill", "none")
             .style("stroke", function (d) { return (color(d.name)) })
@@ -190,21 +199,21 @@
             .on("mouseover", highlight)
             .on("mouseleave", doNotHighlight)
 
-        // Draw the axis:
+        // 画轴
         svg.selectAll("myAxis")
-            // For each dimension of the dataset I add a 'g' element:
             .data(dimensions).enter()
             .append("g")
             .attr("class", "axis")
-            // I translate this element to its right position on the x axis
             .attr("transform", function (d) { return "translate(" + x(d) + ")"; })
-            // And I build the axis with the call function
-            .each(function (d) { d3.select(this).call(d3.axisLeft().ticks(5).scale(y[d])) })
-            // Add axis title
+            .each(function (d) {
+                d3.select(this).call(d3.axisLeft().ticks(5).scale(y[d]))
+            })
             .append("text")
             .style("text-anchor", "middle")
             .attr("y", -9)
-            .text(function (d) { return d; })
+            .text(function (d) {
+                return d;
+            })
             .style("fill", "black")
 
     })
