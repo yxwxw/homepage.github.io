@@ -77,7 +77,7 @@
         // d3自带的color集合 12色 对应12中不同的汽车类型
         var color = d3.scaleOrdinal(d3.schemePaired);
 
-        d3.csv("https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/cars.csv").then(function (data) {
+        d3.csv("https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/data/cars.csv").then(function (data) {
 
             // 获取每个data colums中除去name 和 series的其他key值 存到traits中
             var domainByTrait = {},

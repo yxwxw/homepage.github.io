@@ -4,11 +4,11 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <title>Brushing Example</title>
-    <link rel="stylesheet" type="text/css" href="css/d3.parcoords.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="lib/d3.js"></script>
-    <script src="lib/d3.svg.multibrush.js"></script>
-    <script src="lib/d3.parcoords.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/d3.parcoords.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../lib/d3.js"></script>
+    <script src="../lib/d3.svg.multibrush.js"></script>
+    <script src="../lib/d3.parcoords.js"></script>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
         .alpha(0.8);
 
     // 除了设定color函数，其他要做的不多
-    d3.csv('https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/air_Beijing.csv', function (data) {
+    d3.csv('https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/data/air_Beijing.csv', function (data) {
         parcoords
             .data(data)
             .hideAxis(["range"])
