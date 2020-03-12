@@ -1,29 +1,58 @@
 <html>
 
 <head>
-    <title>visual high dimensionanl data</title>
-    <script src="./lib/d3.v5.js"></script>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <style>
+        svg {
+            font: 10px sans-serif;
+            padding: 10px;
+        }
+
+        .axis,
+        .frame {
+            shape-rendering: crispEdges;
+        }
+
+        .axis line {
+            stroke: #ddd;
+        }
+
+        .axis path {
+            display: none;
+        }
+
+        .cell text {
+            font-weight: bold;
+            text-transform: capitalize;
+            fill: black;
+        }
+
+        .frame {
+            fill: none;
+            stroke: #aaa;
+        }
+
+        circle {
+            fill-opacity: .7;
+        }
+
+        circle.hidden {
+            fill: #ccc !important;
+        }
+
+        .extent {
+            fill: #000;
+            fill-opacity: .125;
+            stroke: #fff;
+        }
+    </style>
+
 </head>
 
 <body>
-    <svg width="720" height="120">
-        <circle cx="40" cy="60" r="30"></circle>
-        <circle cx="80" cy="60" r="30"></circle>
-        <circle cx="120" cy="60" r="30"></circle>
-    </svg>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <script>
-        var svg = d3.select("svg");
-        var circle = svg.selectAll("circle")
-            .data([32, 57]);
-        circle.exit().remove();
-        var circleEnter = circle.enter().append("circle");
-
-        circleEnter.attr("cy", 60);
-        circleEnter.attr("cx", function (d, i) { return i * 100 + 30; });
-        circleEnter.attr("r", function (d) { return Math.sqrt(d); });
-        circleEnter.attr("fill", "steelblue");
-
+        
     </script>
 </body>
 

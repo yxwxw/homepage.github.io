@@ -1,0 +1,154 @@
+<html>
+
+<head>
+	<title>homework1</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="./css/hw1.css" />
+	<script src="./lib/d3.min.js"></script>
+	<script src="js/bars.js"></script>
+	<style>
+		#content {
+			width: 50%;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		#logo {
+			color: #ebebd3;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-left: 25%;
+		}
+
+		@media (max-width: 700px) {
+			#logo {
+				margin-left: 10%;
+			}
+
+			#content {
+				width: 80%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header"><span id="logo">this is a website</span></header>
+	<div id="content">
+		<h1>Stacked Bar Chart</h1>
+		<p>part1</p>
+		<section>
+			<p>使用简单Bar Chart表示数据</p>
+			<div class="box1"><svg></svg></div>
+		</section>
+		<p>part2</p>
+		<section>
+			<p>将Bar Chart分解表示数据</p>
+			<div class="box2"></div>
+		</section>
+	</div>
+</body>
+<script>
+	function makeleftbar(tic) {
+		const theX = 0;
+		const theY = tic;
+
+		var strs = [
+			"Using parameterized reports",
+			"Viewing static management reports",
+			"Doing simple ad hoc analysis",
+			"Monitoring scorecards",
+			"Using personanlized dashboards",
+			"Doing intermediated ad hoc analysis",
+			"Doing complex ad hoc analysis",
+			"Doing predictive analysis"
+		];
+
+		const svg = d3
+			.select("div .box1")
+			.select("svg")
+
+		svg
+			.append("g")
+			.attr("transform", "translate(132, -3)")
+			// .append("rect")
+			// .attr("x", 0)
+			// .attr("y", (theY - 1) * 100)
+			// .attr("height", 100)
+			// .attr("width", 120)
+			// .attr("fill", "#FFFFFF")
+			.selectAll("text")
+			.data(strs)
+			.enter()
+			.append("text")
+			.text(d => d)
+			.attr("x", 0)
+			.attr("y", function (d, i) {
+				return 10 * (i + 2) + (theY - 1) * 100;
+			})
+			.attr("text-anchor", "end")
+			.attr("font-size", "7");
+	}
+
+	function leftbar() {
+		for (icc = 1; icc <= 5; icc++) {
+			makeleftbar(icc);
+			console.log(icc);
+		}
+	}
+
+	leftbar();
+</script>
+<script>
+	var company = [
+		"Tableau",
+		"Qliktech",
+		"Oracle",
+		"Tibco",
+		"Jaspersoft",
+		"LogiXML",
+		"IDS SCheer",
+		"Board",
+		"Infor",
+		"Targit",
+		"Panorama",
+		"ArcPlan",
+		"SAS",
+		"Microsoft",
+		"MicroStrategy",
+		"Information Builders",
+		"IBM",
+		"SAP",
+		"Actuate"
+	]
+
+	var colorbar = [
+		"#ffe75e",
+		"#feb72b",
+		"#899857",
+		"#527318",
+		"#65587f",
+		"#f18867",
+		"#e85f99",
+		"#50bda1",
+		"#f8b195",
+		"#f67280",
+		"#c06c84",
+		"#6c567b",
+		"#ededed",
+		"#ffa41b",
+		"#9818d6",
+		"#fcf8e8",
+		"#ecdfc8",
+		"#ecb390"
+	]
+	let i = 0;
+	company.forEach(element => {
+		bars(element, i, colorbar[i]);
+		i++;
+		console.log(i);
+	});
+</script>
+
+</html>

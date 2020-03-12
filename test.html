@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        svg {
+            font: 10px sans-serif;
+            padding: 10px;
+        }
+
+        .axis,
+        .frame {
+            shape-rendering: crispEdges;
+        }
+
+        .axis line {
+            stroke: #ddd;
+        }
+
+        .axis path {
+            display: none;
+        }
+
+        .cell text {
+            font-weight: bold;
+            text-transform: capitalize;
+            fill: black;
+        }
+
+        .frame {
+            fill: none;
+            stroke: #aaa;
+        }
+
+        circle {
+            fill-opacity: .7;
+        }
+
+        circle.hidden {
+            fill: #ccc !important;
+        }
+
+        .extent {
+            fill: #000;
+            fill-opacity: .125;
+            stroke: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+
+        var width = 960,
+            size = 200,
+            padding = 30;
+
+        // 设置x y的比例尺
+        var x = d3.scaleLinear()
+            .range([padding / 2, size - padding / 2]);
+
+        var y = d3.scaleLinear()
+            .range([size - padding / 2, padding / 2]);
+
+        // 设置数组序列的个数为6个左右
+        var xAxis = d3.axisBottom()
+            .scale(x)
+            .ticks(6);
+
+        var yAxis = d3.axisLeft()
+            .scale(y)
+            .ticks(6);
+
+        // var color = d3.scaleOrdinal(d3.schemeCategory10); 10种颜色
+
+        // d3自带的color集合 12色 对应12中不同的汽车类型
+        var color = d3.scaleOrdinal(d3.schemePaired);
+
+        d3.csv("https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/cars.csv").then(function (data) {
+
+            // 获取每个data colums中除去name 和 series的其他key值 存到traits中
+            var domainByTrait = {},
+                traits = d3.keys(data[0]).filter(function (d) { return d !== "name" && d != "series"; }),
+                n = traits.length;
+
+            // 获取每个key值对应的value集合的最大值和最小值
+            traits.forEach(function (trait) {
+                domainByTrait[trait] = d3.extent(data, function (d) { return +d[trait]; });
+            });
+
+            xAxis.tickSize(size * n);
+            yAxis.tickSize(-size * n);
+
+            // brush 是d3中用于鼠标选中区域的一个组建
+            // start brush end 对应三个函数brushstart brushmove brushend
+            var brush = d3.brush()
+                .on("start", brushstart)
+                .on("brush", brushmove)
+                .on("end", brushend)
+                .extent([[0, 0], [size, size]]);
+
+            // 设置svg的size padding等属性
+            var svg = d3.select("body").append("svg")
+                .attr("width", size * (n + 1) + padding)
+                .attr("height", size * n + padding)
+                .append("g")
+                .attr("transform", "translate(" + padding + "," + padding / 2 + ")");
+
+            // 画x坐标轴
+            svg.selectAll(".x.axis")
+                .data(traits)
+                .enter().append("g")
+                .attr("class", "x axis")
+                .attr("transform", function (d, i) { return "translate(" + (n - i - 1) * size + ",0)"; })
+                .each(function (d) { x.domain(domainByTrait[d]); d3.select(this).call(xAxis); });
+
+            // 画y坐标轴
+            svg.selectAll(".y.axis")
+                .data(traits)
+                .enter().append("g")
+                .attr("class", "y axis")
+                .attr("transform", function (d, i) { return "translate(0," + i * size + ")"; })
+                .each(function (d) { y.domain(domainByTrait[d]); d3.select(this).call(yAxis); });
+
+            names = [];
+            data.forEach(element => {
+                names.push(element.name);
+            });
+            names = uniq(names);
+            
+            var legendgroup = svg.selectAll(".legend")
+                .data(names)
+                .enter()
+                .append("g")
+                .attr(
+                    'transform', function (d, i) {
+                        return 'translate(' + [n * size + padding * 1.5, padding / 2 + 25 * i] + ')'
+                    }
+                )
+
+            legendgroup.append('circle')
+                .attr("cx", 0)
+                .attr("cy", 0)
+                .attr("r", 6)
+                .attr("fill", function (d, i) {
+                    return color(d);
+                });
+            
+            legendgroup.append('text')
+                .attr("x", 20)
+                .attr("y", 3)
+                .text(function(d) {
+                    return d;
+                });
+
+            // 画点图矩阵的每一个元素
+            var cell = svg.selectAll("cell")
+                .data(cross(traits, traits)) // traits中的元素做笛卡儿积
+                .enter().append("g")
+                .attr("class", "cell")
+                .attr("transform", function (d) { return "translate(" + (n - d.i - 1) * size + "," + d.j * size + ")"; })
+                .each(plot);
+
+            // 当 矩阵的i j相等的时候，代表点图的自变量和因变量相同
+            // 此时一定是一条直线，可以用来展示对应的标签名字
+            cell.filter(function (d) { return d.i === d.j; }).append("text")
+                .attr("x", padding)
+                .attr("y", padding)
+                .attr("dy", ".71em")
+                .text(function (d) { return d.x; });
+
+            cell.call(brush);
+
+            function uniq(array) {
+                array.sort();
+                var temp = [array[0]];
+                for (var i = 1; i < array.length; i++) {
+                    if (array[i] !== temp[temp.length - 1]) {
+                        temp.push(array[i]);
+                    }
+                }
+                return temp;
+            }
+
+            // 用于画每一个子图
+            function plot(p) {
+                var cell = d3.select(this);
+
+                x.domain(domainByTrait[p.x]);
+                y.domain(domainByTrait[p.y]);
+
+                cell.append("rect")
+                    .attr("class", "frame")
+                    .attr("x", padding / 2)
+                    .attr("y", padding / 2)
+                    .attr("width", size - padding)
+                    .attr("height", size - padding);
+
+                cell.selectAll("circle")
+                    .data(data)
+                    .enter().append("circle")
+                    .attr("cx", function (d) { return x(d[p.x]); })
+                    .attr("cy", function (d) { return y(d[p.y]); })
+                    .attr("r", 4)
+                    .style("fill", function (d) {
+                        return color(d.name);
+                    });
+            }
+
+            var brushCell;
+
+            // 清空之前的brush状态
+            function brushstart(p) {
+                if (brushCell !== this) {
+                    d3.select(brushCell).call(brush.move, null);
+                    brushCell = this;
+                    x.domain(domainByTrait[p.x]);
+                    y.domain(domainByTrait[p.y]);
+                }
+            }
+
+            // 高亮选中的区域
+            function brushmove(p) {
+                var e = d3.brushSelection(this);
+                svg.selectAll("circle").classed("hidden", function (d) {
+                    return !e
+                        ? false
+                        : (
+                            e[0][0] > x(+d[p.x]) || x(+d[p.x]) > e[1][0]
+                            || e[0][1] > y(+d[p.y]) || y(+d[p.y]) > e[1][1]
+                        );
+                });
+            }
+
+            // 如果没有选中的区域，高亮所有的区域
+            function brushend() {
+                var e = d3.brushSelection(this);
+                if (e === null) svg.selectAll(".hidden").classed("hidden", false);
+            }
+        });
+
+        function cross(a, b) {
+            var c = [], n = a.length, m = b.length, i, j;
+            for (i = -1; ++i < n;) for (j = -1; ++j < m;) c.push({ x: a[i], i: i, y: b[j], j: j });
+            return c;
+        }
+
+    </script>
+</body>
+
+</html>
