@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://gw.alipayobjects.com/os/lib/antv/g2/4.0.3/dist/g2.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+    <title>气泡图</title>
+    <style>
+        h4 {
+            text-align: center;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 60%; max-width: 1500px; margin: 0 auto; padding:100 100 100 100;">
+
+
+        <img src="../img/us.png">
+        <div id="container1">
+            <h4>USA Map</h4>
+            <script>
+
+                const colorMap = {
+                    Seattle: '#1f77b4',
+                    Chicago: '#ff7f0e',
+                    NYC: '#2ca02c',
+                    SF: '#d62728',
+                    Houston: '#9467bd',
+                    Miami: '#8c564b'
+                };
+
+                fetch('https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/data/sunshine.json')
+                    .then(res => res.json())
+                    .then(data => {
+                        const chart = new G2.Chart({
+                            container: 'container1',
+                            autoFit: true,
+                            height: 500,
+                        });
+                        chart.data(data);
+                        let lon_ord_str = ['旧金山', '西雅图', '休斯顿', '芝加哥', '迈阿密', '纽约'];
+                        chart.axis('monthnum', {
+                            label: {
+                                formatter(value) {
+                                    if (value === '11.5' || value === '-0.5')
+                                        return '';
+                                    return (+value + 1) + '月';
+                                } // 格式化坐标轴的显示
+                            }
+                        });
+                        chart.axis('lon_ord', {
+                            label: {
+                                formatter(value) {
+                                    if (value === '0.5' || value === '7')
+                                        return '';
+                                    return lon_ord_str[(+value - 1)];
+                                } // 格式化坐标轴的显示
+                            }
+                        });
+                        chart.scale({
+                            monthnum: {
+                                alias: 'Month',
+                                tickInterval: 1,
+                                min: -0.5,
+                                max: 11.5,
+                                nine: true
+                            },
+                            lon_ord: {
+                                alias: 'order by longitude',
+                                tickInterval: 1,
+                                min: 0.5,
+                                max: 7
+                            }
+                        });
+                        chart.tooltip({
+                            showTitle: false,
+                            showMarkers: false,
+                        });
+                        chart.legend('sunshine', false); // 该图表默认会生成多个图例，设置不展示 Population 和 Country 两个维度的图例
+                        chart.point().position('monthnum*lon_ord')
+                            .size('sunshine', [4, 30])
+                            .color('city', val => {
+                                return colorMap[val];
+                            })
+                            .shape('circle')
+                            .label('sunshine', (val) => {
+                                return {
+                                    offset: 35, // 文本距离图形的距离
+                                    style: {
+                                        fill: '#000000',
+                                        stroke: '#fff',
+                                        lineWidth: 0.5,
+                                        fillOpacity: (+val) / 350
+                                    }
+                                }
+                            })
+                            .tooltip('city*lon*lat*sunshine')
+                            .style('city', (val) => {
+                                return {
+                                    lineWidth: 1,
+                                    strokeOpacity: 1,
+                                    fillOpacity: 0.5,
+                                    opacity: 0.65,
+                                    stroke: colorMap[val],
+                                };
+                            })
+                            .style('sunshine', (val) => {
+                                return {
+                                    fillOpacity: (+val) / 450
+                                }
+                            });
+                        chart.interaction('element-active');
+                        chart.render();
+                    });
+            </script>
+        </div>
+        <h4>order by longitude</h4>
+        <div id="container2">
+            <script>
+
+                fetch('https://raw.githubusercontent.com/yxwxw/yxwxw.github.io/master/data/sunshine.json')
+                    .then(res => res.json())
+                    .then(data => {
+                        const chart = new G2.Chart({
+                            title: {
+                                visible: true,
+                                text: 'GBKJSQ'
+                            }, description: {
+                                visible: true,
+                                text: 'a breif description of Basic Line Chart',
+                            },
+                            container: 'container2',
+                            autoFit: true,
+                            height: 500,
+                        });
+                        chart.data(data);
+                        let lat_ord_str = ['西雅图', '纽约', '芝加哥', '旧金山', '休斯顿', '迈阿密'];
+                        chart.axis('monthnum', {
+                            label: {
+                                formatter(value) {
+                                    if (value === '11.5' || value === '-0.5')
+                                        return '';
+                                    return (+value + 1) + '月';
+                                } // 格式化坐标轴的显示
+                            }
+                        });
+                        chart.axis('lat_ord', {
+                            label: {
+                                formatter(value) {
+                                    if (value === '0.5' || value === '7')
+                                        return '';
+                                    return lat_ord_str[(+value - 1)];
+                                } // 格式化坐标轴的显示
+                            }
+                        });
+                        chart.scale({
+                            monthnum: {
+                                alias: 'Month',
+                                tickInterval: 1,
+                                min: -0.5,
+                                max: 11.5,
+                                nine: true
+                            },
+                            lat_ord: {
+                                alias: 'order by longitude',
+                                tickInterval: 1,
+                                min: 0.5,
+                                max: 7
+                            }
+                        });
+                        chart.tooltip({
+                            showTitle: false,
+                            showMarkers: false,
+                        });
+                        chart.legend('sunshine', false);
+
+                        chart.point().position('monthnum*lat_ord')
+                            .size('sunshine', [4, 30])
+                            .color('city', val => {
+                                return colorMap[val];
+                            })
+                            .shape('circle')
+                            .label('sunshine', (val) => {
+                                return {
+                                    offset: 35, // 文本距离图形的距离
+                                    style: {
+                                        fill: '#000000',
+                                        stroke: '#fff',
+                                        lineWidth: 0.5,
+                                        fillOpacity: (+val) / 350
+                                    }
+                                }
+                            })
+                            .tooltip('city*lon*lat*sunshine')
+                            .style('city', (val) => {
+                                return {
+                                    lineWidth: 1,
+                                    strokeOpacity: 1,
+                                    fillOpacity: 0.5,
+                                    opacity: 0.65,
+                                    stroke: colorMap[val],
+                                };
+                            })
+                            .style('sunshine', (val) => {
+                                return {
+                                    fillOpacity: (+val) / 450
+                                }
+                            })
+                            ;
+                        chart.interaction('element-active');
+                        chart.render();
+                    });
+            </script>
+        </div>
+        <h4>order by latitude</h4>
+    </div>
+</body>
+
+</html>
