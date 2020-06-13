@@ -14,11 +14,9 @@
                 "country": "Italy",
                 "county": null,
                 "updatedAt": "2020-06-13 03:33:14",
-                "stats": {
                     "confirmed": 3271,
                     "deaths": 453,
-                    "recovered": 2290
-                },
+                    "recovered": 2290,
                 "province": "Abruzzo"
             }
         },
@@ -35,11 +33,11 @@
                 "country": "Brazil",
                 "county": null,
                 "updatedAt": "2020-06-13 03:33:14",
-                "stats": {
+
                     "confirmed": 9295,
                     "deaths": 254,
-                    "recovered": 4775
-                },
+                    "recovered": 4775,
+
                 "province": "Acre"
             }
         },
@@ -56,11 +54,11 @@
                 "country": "Russia",
                 "county": null,
                 "updatedAt": "2020-06-13 03:33:14",
-                "stats": {
+
                     "confirmed": 1251,
                     "deaths": 12,
-                    "recovered": 708
-                },
+                    "recovered": 708,
+                
                 "province": "Adygea Republic"
             }
         }
