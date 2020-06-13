@@ -19,10 +19,6 @@
                     "deaths": 453,
                     "recovered": 2290
                 },
-                "coordinates": {
-                    "latitude": 42.35122196,
-                    "longitude": 13.39843823
-                },
                 "province": "Abruzzo"
             }
         },
@@ -44,10 +40,6 @@
                     "deaths": 254,
                     "recovered": 4775
                 },
-                "coordinates": {
-                    "latitude": -9.0238,
-                    "longitude": -70.812
-                },
                 "province": "Acre"
             }
         },
@@ -68,10 +60,6 @@
                     "confirmed": 1251,
                     "deaths": 12,
                     "recovered": 708
-                },
-                "coordinates": {
-                    "latitude": 44.6939006,
-                    "longitude": 40.1520421
                 },
                 "province": "Adygea Republic"
             }
